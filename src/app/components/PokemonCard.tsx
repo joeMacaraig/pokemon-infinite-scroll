@@ -18,7 +18,6 @@ export const PokemonCard = ({ pokemon }: Prop) => {
           alt={`${pokemon?.name} photo`}
           width={100}
           height={100}
-          objectFit="contain"
           loading="lazy"
         />
       </div>

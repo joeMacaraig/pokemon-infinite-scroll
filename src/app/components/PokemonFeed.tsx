@@ -6,7 +6,7 @@ export const PokemonFeed = async () => {
   const all = await fetchAllPokemon();
   return (
     <section>
-      <PokemonList data={data} all={all} />
+      <PokemonList data={data}/>
     </section>
   );
 };
