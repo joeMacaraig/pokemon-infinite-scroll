@@ -23,8 +23,8 @@ export const Load = () => {
   return (
     <>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 place-items-center mt-8">
-        {data.map((item: PokemonProp) => (
-          <PokemonCard pokemon={item} />
+        {data.map((item: PokemonProp, index: number) => (
+          <PokemonCard pokemon={item} key={index} />
         ))}
       </div>
       <div className="p-10">
