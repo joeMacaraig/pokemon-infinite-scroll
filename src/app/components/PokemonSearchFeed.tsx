@@ -26,7 +26,9 @@ export const PokemonSearchFeed = ({ data }: Props) => {
         ))}
       </div>
       {filteredData.length === 0 && (
-        <div className="items-center flex font-bold justify-center text-4xl text-center">No Pokemons Found! ☹️</div>
+        <div className="items-center flex font-bold justify-center text-4xl text-center">
+          No Pokemons Found! ☹️
+        </div>
       )}
     </div>
   );
