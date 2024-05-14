@@ -14,7 +14,7 @@ export const PokemonSearch = () => {
   };
 
   const handlePokemon = () => {
-    router.push(`/pokemon?search=${search}`);
+    router.push(`/pokemon-search?search=${search}`);
   };
 
   return (
@@ -22,6 +22,12 @@ export const PokemonSearch = () => {
       <Link href="/" passHref>
         <h1 className="text-yellow-300 font-medium text-6xl">Pokemon</h1>
       </Link>
+      <p className="text-white md:w-1/2 text-center">
+        Demonstrates an infinite scroll feature... Powered by the{" "}
+        <Link href="https://pokeapi.co/" className="underline text-blue-500">
+          Pokemon API
+        </Link>.
+      </p>
       <div className="w-2/3 sm:w-1/2 flex items-center rounded-full overflow-hidden">
         <input
           className="w-full px-4 py-2"
